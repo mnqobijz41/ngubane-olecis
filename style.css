@@ -1034,7 +1034,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ==================== CONTACT PAGE ==================== */
 .contact-info-card {
-    background: var(--primary-dark);
+    background: var(--secondary);
     border: 1px solid rgba(0,0,0,0.07);
     border-radius: 10px;
     padding: 28px 20px;
