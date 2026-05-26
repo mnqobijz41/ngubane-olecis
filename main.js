@@ -44,3 +44,33 @@ galleryItems.forEach(item => {
         }
     });
 });
+
+// Contact & Quote form success handling
+const forms = document.querySelectorAll('#contactForm, #quoteForm');
+const successMsg = document.getElementById('successMessage');
+
+forms.forEach(form => {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = form.action;
+
+        try {
+            const response = await fetch(action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                form.reset();
+                if (successMsg) {
+                    successMsg.style.display = 'flex';
+                    setTimeout(() => successMsg.style.display = 'none', 4000);
+                }
+            }
+        } catch (error) {
+            console.error('Form error:', error);
+        }
+    });
+});
