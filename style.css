@@ -1220,3 +1220,37 @@ select.custom-input {
     from { transform: translateX(100px); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
 }
+
+/* ==================== GALLERY ENHANCEMENTS ==================== */
+.back-btn {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.15);
+    color: var(--secondary);
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+.gallery-section-heading {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary);
+    display: inline-block;
+}

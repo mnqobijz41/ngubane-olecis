@@ -43,194 +43,68 @@
     <div class="page-hero-overlay"></div>
     <div class="container position-relative z-1">
         <p class="section-label">Our Work</p>
-        <h1 class="page-hero-title">Projects Gallery</h1>
-        
+        <h1 class="page-hero-title">Project Gallery</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" id="breadcrumbCurrent">Gallery</li>
+            </ol>
+        </nav>
     </div>
 </section>
 
-<!-- FILTER BUTTONS -->
+<!-- FILTER BAR -->
 <section class="gallery-filter-section py-4 bg-white">
     <div class="container">
-        <div class="d-flex flex-wrap justify-content-center gap-2">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="building">Home Building</button>
-            <button class="filter-btn" data-filter="renovation">Renovations</button>
-            <button class="filter-btn" data-filter="roofing">Roofing</button>
-            <button class="filter-btn" data-filter="interior">Interior</button>
-            <button class="filter-btn" data-filter="landscaping">Landscaping</button>
+        <div class="d-flex flex-wrap justify-content-center gap-2" id="filterBar">
+            <button class="filter-btn active" data-view="all">All Projects</button>
+            <button class="filter-btn" data-view="buildings">Buildings</button>
+            <button class="filter-btn" data-view="fencing">Fencing</button>
+            <button class="filter-btn" data-view="interior">Interior</button>
+            <button class="filter-btn" data-view="landscaping">Landscaping</button>
+            <button class="filter-btn" data-view="roofing">Roofing</button>
         </div>
     </div>
 </section>
 
-<!-- GALLERY GRID -->
+<!-- GALLERY CONTENT -->
 <section class="gallery-section py-5">
     <div class="container">
 
-        <div class="row g-3" id="galleryGrid">
-
-            <!-- 
-            ============================================
-            HOW TO ADD YOUR PHOTOS:
-            
-            1. Upload your photo to the images folder
-            2. Copy one of the gallery-item blocks below
-            3. Replace src="../images/your-photo.jpg"
-            4. Update data-category to match the filter:
-               building | renovation | roofing | interior | landscaping
-            5. Update the title and description
-            ============================================
-            -->
-
-            <!-- PLACEHOLDER ITEM 1 -->
-            <div class="col-sm-6 col-lg-4 gallery-item" data-category="building">
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <i class="bi bi-image"></i>
-                        <p>Home Building Project</p>
-                        <span>Upload your photo here</span>
-                    </div>
-                    <!-- REPLACE THE DIV ABOVE WITH THIS WHEN YOU HAVE A PHOTO:
-                    <img src="../images/your-photo.jpg" alt="Home Building Project" class="gallery-img">
-                    -->
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                            <h6>Home Building</h6>
-                            <p>Inanda, KwaZulu-Natal</p>
-                        </div>
-                        <div class="gallery-zoom">
-                            <i class="bi bi-zoom-in"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PLACEHOLDER ITEM 2 -->
-            <div class="col-sm-6 col-lg-4 gallery-item" data-category="renovation">
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <i class="bi bi-image"></i>
-                        <p>Renovation Project</p>
-                        <span>Upload your photo here</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                            <h6>Home Renovation</h6>
-                            <p>KwaZulu-Natal</p>
-                        </div>
-                        <div class="gallery-zoom">
-                            <i class="bi bi-zoom-in"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PLACEHOLDER ITEM 3 -->
-            <div class="col-sm-6 col-lg-4 gallery-item" data-category="roofing">
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <i class="bi bi-image"></i>
-                        <p>Roofing Project</p>
-                        <span>Upload your photo here</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                            <h6>Roofing</h6>
-                            <p>KwaZulu-Natal</p>
-                        </div>
-                        <div class="gallery-zoom">
-                            <i class="bi bi-zoom-in"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PLACEHOLDER ITEM 4 -->
-            <div class="col-sm-6 col-lg-4 gallery-item" data-category="interior">
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <i class="bi bi-image"></i>
-                        <p>Interior Design Project</p>
-                        <span>Upload your photo here</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                            <h6>Interior Design</h6>
-                            <p>KwaZulu-Natal</p>
-                        </div>
-                        <div class="gallery-zoom">
-                            <i class="bi bi-zoom-in"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PLACEHOLDER ITEM 5 -->
-            <div class="col-sm-6 col-lg-4 gallery-item" data-category="landscaping">
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <i class="bi bi-image"></i>
-                        <p>Landscaping Project</p>
-                        <span>Upload your photo here</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                            <h6>Landscaping</h6>
-                            <p>KwaZulu-Natal</p>
-                        </div>
-                        <div class="gallery-zoom">
-                            <i class="bi bi-zoom-in"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PLACEHOLDER ITEM 6 -->
-            <div class="col-sm-6 col-lg-4 gallery-item" data-category="building">
-                <div class="gallery-card">
-                    <div class="gallery-placeholder">
-                        <i class="bi bi-image"></i>
-                        <p>Double Storey Build</p>
-                        <span>Upload your photo here</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div class="gallery-info">
-                            <h6>Double Storey Build</h6>
-                            <p>Inanda, KwaZulu-Natal</p>
-                        </div>
-                        <div class="gallery-zoom">
-                            <i class="bi bi-zoom-in"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <!-- BACK BUTTON -->
+        <div id="backBtn" class="mb-4" style="display:none;">
+            <button class="back-btn" id="backButton">
+                <i class="bi bi-arrow-left"></i> Back to All Projects
+            </button>
         </div>
 
-        <!-- UPLOAD NOTICE -->
-        <div class="upload-notice text-center mt-5">
-            <div class="upload-notice-inner">
-                <i class="bi bi-camera"></i>
-                <h5>Photos Coming Soon</h5>
-                <p>We are currently uploading our project photos. Check back soon to see our completed work.</p>
-            </div>
+        <!-- SECTION TITLE -->
+        <div id="sectionTitle" class="mb-4" style="display:none;">
+            <h3 class="gallery-section-heading"></h3>
         </div>
+
+        <!-- GALLERY GRID -->
+        <div class="row g-3" id="galleryGrid"></div>
 
     </div>
 </section>
 
 <!-- LIGHTBOX MODAL -->
 <div class="modal fade" id="lightboxModal" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark border-0">
             <div class="modal-header border-0 pb-0">
+                <h6 id="lightboxTitle" class="text-white mb-0"></h6>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body text-center p-2">
-                <img id="lightboxImg" src="" alt="" class="img-fluid rounded">
-                <div class="mt-3">
-                    <h6 id="lightboxTitle" class="text-white mb-1"></h6>
-                    <p id="lightboxLocation" class="text-muted small mb-0"></p>
-                </div>
+            <div class="modal-body text-center p-3">
+                <img id="lightboxImg" src="" alt="" class="img-fluid rounded" style="max-height:75vh; object-fit:contain;">
+                <p id="lightboxLocation" class="text-muted small mt-2 mb-0"></p>
+            </div>
+            <div class="modal-footer border-0 justify-content-center pt-0 pb-3">
+                <button class="btn btn-sm btn-outline-light" id="lightboxPrev"><i class="bi bi-chevron-left"></i> Prev</button>
+                <span id="lightboxCounter" class="text-muted small mx-3"></span>
+                <button class="btn btn-sm btn-outline-light" id="lightboxNext">Next <i class="bi bi-chevron-right"></i></button>
             </div>
         </div>
     </div>
@@ -264,7 +138,34 @@
                 </div>
                 <p class="footer-desc">You Dream. My Job. Our Vision. Professional construction and architectural services in KwaZulu-Natal.</p>
             </div>
-           
+            <div class="col-lg-2 col-sm-6">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h6 class="footer-heading">Services</h6>
+                <ul class="footer-links">
+                    <li><a href="services.html">Architectural Services</a></li>
+                    <li><a href="services.html">Home Building</a></li>
+                    <li><a href="services.html">Renovations</a></li>
+                    <li><a href="services.html">Roofing</a></li>
+                    <li><a href="services.html">Plumbing</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h6 class="footer-heading">Contact Us</h6>
+                <ul class="footer-contact">
+                    <li><i class="bi bi-geo-alt-fill"></i> 343 Nombonjane Mtshali Drive, Tambo Plaza, Inanda, 4309</li>
+                    <li><i class="bi bi-telephone-fill"></i> 073 482 7968</li>
+                    <li><i class="bi bi-envelope-fill"></i> ngubaneolecis@gmail.com</li>
+                </ul>
+            </div>
         </div>
         <hr class="footer-divider mt-4">
         <div class="row align-items-center">
