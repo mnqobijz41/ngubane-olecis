@@ -110,11 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80') center/cover no-repeat;
-    opacity: 0.12;
-    z-index: -1;
+    display: none;
 }
 
 .gallery-filter-section,
@@ -414,11 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80') center/cover no-repeat;
-    opacity: 0.08;
+    display: none;
 }
 
 .cta-section h2 {
