@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 
 // ==================== GALLERY SYSTEM ====================
 
-const BASE = '../Images';
+const BASE = './Images';
 
 const GALLERY_DATA = {
     buildings: {
