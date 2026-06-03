@@ -101,17 +101,31 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ==================== HERO ==================== */
 .page-hero {
-    min-height: 40vh;
+    min-height: 20vh;
     background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
     position: relative;
-    padding: 140px 0 60px;
+    padding: 90px 0 30px;
+    overflow: hidden;
+    z-index: 0;
 }
 
-.hero-overlay {
+.page-hero-overlay {
     position: absolute;
     inset: 0;
     background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80') center/cover no-repeat;
-    opacity: 0.15;
+    opacity: 0.12;
+    z-index: -1;
+}
+
+.gallery-filter-section,
+.gallery-section,
+.about-intro,
+.mvv-section,
+.credentials-section,
+.services-section {
+    position: relative;
+    z-index: 1;
+    background: inherit;
 }
 
 .hero-tagline {
@@ -396,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ==================== CTA ==================== */
 .cta-section {
     background: linear-gradient(135deg, #1a1a2e, #0f0f0f);
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .cta-section::before {
@@ -424,6 +438,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     background: #0a0a0a;
     color: rgba(255,255,255,0.7);
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
 }
 
 .footer-desc {
