@@ -527,7 +527,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
     .hero-section {
-        padding: 100px 0 60px;
+        padding: 70px 0 30px;
         text-align: center;
     }
 
@@ -561,10 +561,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ==================== PAGE HERO ==================== */
 .page-hero {
-    min-height: 40vh;
+    min-height: 0;
     background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
     position: relative;
-    padding: 140px 0 60px;
+    padding: 75px 0 20px;
+    overflow: hidden;
+    z-index: 0;
 }
 
 .page-hero-overlay {
