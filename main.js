@@ -17,23 +17,23 @@ const BASE = '../Images';
 const GALLERY_DATA = {
     buildings: {
         label: 'Buildings',
-        cover: `${BASE}/buildings/build1.png`,
+        cover: `${BASE}/buildings/build1.jpeg`,
         subfolders: [
             {
                 label: 'Home Building',
-                cover: `${BASE}/buildings/build1.png`,
+                cover: `${BASE}/buildings/build1.jpeg`,
                 photos: Array.from({length: 10}, (_, i) => ({
-                    src: `${BASE}/buildings/build${i + 1}.png`,
-                    title: `Home Building`,
+                    src: `${BASE}/buildings/build${i + 1}.jpeg`,
+                    title: 'Home Building',
                     location: 'KwaZulu-Natal'
                 }))
             },
             {
                 label: 'Double Storey Build',
-                cover: `${BASE}/buildings/build11.png`,
-                photos: Array.from({length: 13}, (_, i) => ({
-                    src: `${BASE}/buildings/build${i + 11}.png`,
-                    title: `Double Storey Build`,
+                cover: `${BASE}/buildings/build11.jpeg`,
+                photos: Array.from({length: 15}, (_, i) => ({
+                    src: `${BASE}/buildings/build${i + 11}.jpeg`,
+                    title: 'Double Storey Build',
                     location: 'KwaZulu-Natal'
                 }))
             }
@@ -41,36 +41,36 @@ const GALLERY_DATA = {
     },
     fencing: {
         label: 'Fencing',
-        cover: `${BASE}/fencing/fence1.png`,
+        cover: `${BASE}/fencing/fence1.jpeg`,
         photos: Array.from({length: 20}, (_, i) => ({
-            src: `${BASE}/fencing/fence${i + 1}.png`,
+            src: `${BASE}/fencing/fence${i + 1}.jpeg`,
             title: 'Fencing',
             location: 'KwaZulu-Natal'
         }))
     },
     interior: {
         label: 'Interior',
-        cover: `${BASE}/interior/int1.png`,
+        cover: `${BASE}/interior/int1.jpeg`,
         photos: Array.from({length: 15}, (_, i) => ({
-            src: `${BASE}/interior/int${i + 1}.png`,
+            src: `${BASE}/interior/int${i + 1}.jpeg`,
             title: 'Interior Design',
             location: 'KwaZulu-Natal'
         }))
     },
     landscaping: {
         label: 'Landscaping',
-        cover: `${BASE}/landscaping/land1.png`,
+        cover: `${BASE}/landscaping/land1.jpeg`,
         photos: Array.from({length: 14}, (_, i) => ({
-            src: `${BASE}/landscaping/land${i + 1}.png`,
+            src: `${BASE}/landscaping/land${i + 1}.jpeg`,
             title: 'Landscaping',
             location: 'KwaZulu-Natal'
         }))
     },
     roofing: {
         label: 'Roofing',
-        cover: `${BASE}/roofing/roof1.png`,
-        photos: Array.from({length: 19}, (_, i) => ({
-            src: `${BASE}/roofing/roof${i + 1}.png`,
+        cover: `${BASE}/roofing/roof1.jpeg`,
+        photos: Array.from({length: 16}, (_, i) => ({
+            src: `${BASE}/roofing/roof${i + 1}.jpeg`,
             title: 'Roofing',
             location: 'KwaZulu-Natal'
         }))
