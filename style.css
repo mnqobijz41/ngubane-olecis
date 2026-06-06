@@ -100,11 +100,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==================== HERO ==================== */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #0f0f0f 100%);
+    position: relative;
+    padding: 80px 0 50px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('./homephoto.jpeg') center/cover no-repeat;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
 .page-hero {
-    min-height: 20vh;
+    min-height: 0;
     background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
     position: relative;
-    padding: 90px 0 30px;
+    padding: 95px 0 20px;
     overflow: hidden;
     z-index: 0;
 }
