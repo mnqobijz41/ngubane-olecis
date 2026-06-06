@@ -1284,3 +1284,106 @@ select.custom-input {
     border-bottom: 3px solid var(--primary);
     display: inline-block;
 }
+
+/* ==================== AFFILIATIONS ==================== */
+.affiliations-section {
+    background: var(--section-bg);
+}
+
+.affiliation-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 36px 24px;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.07);
+    transition: all 0.3s ease;
+}
+
+.affiliation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    border-color: var(--primary);
+}
+
+.affiliation-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(192, 57, 43, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.affiliation-icon i {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.affiliation-card h5 {
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.affiliation-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.affiliation-number {
+    display: inline-block;
+    background: rgba(192, 57, 43, 0.08);
+    color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* ==================== PARTNERS ==================== */
+.partners-section {
+    background: var(--white);
+}
+
+.partner-card {
+    background: var(--section-bg);
+    border-radius: 10px;
+    padding: 24px 16px;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    border-color: var(--primary);
+    background: var(--white);
+}
+
+.partner-card i {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.partner-card h6 {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--secondary);
+    margin-bottom: 4px;
+}
+
+.partner-card p {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin: 0;
+}
