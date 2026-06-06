@@ -1413,3 +1413,99 @@ select.custom-input {
     color: var(--text-muted);
     margin: 0;
 }
+
+/* ==================== CONTACT PAGE HERO ==================== */
+.contact-hero {
+    position: relative;
+}
+
+.contact-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('../Images/contactphoto.jpeg') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.contact-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ==================== CONTACT MAIN SECTION ==================== */
+.contact-main-section {
+    background: var(--white);
+    position: relative;
+}
+
+/* ==================== CONTACT INFO CARDS UPDATED ==================== */
+.contact-info-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.contact-info-card {
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 10px;
+    padding: 28px 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    border-color: var(--primary);
+}
+
+.contact-info-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(192, 57, 43, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover .contact-info-icon {
+    background: var(--primary);
+}
+
+.contact-info-card:hover .contact-info-icon i {
+    color: var(--white);
+}
+
+.contact-info-icon i {
+    font-size: 1.3rem;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.contact-info-card h6 {
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.contact-info-card span {
+    color: var(--primary);
+    font-size: 0.88rem;
+    font-weight: 600;
+    display: block;
+    line-height: 1.5;
+}
+
+.contact-info-card p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.6;
+}
