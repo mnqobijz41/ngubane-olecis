@@ -1290,6 +1290,12 @@ select.custom-input {
     background: var(--section-bg);
 }
 
+.affiliation-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
 .affiliation-card {
     background: var(--white);
     border-radius: 12px;
@@ -1305,20 +1311,19 @@ select.custom-input {
     border-color: var(--primary);
 }
 
-.affiliation-icon {
-    width: 64px;
-    height: 64px;
-    background: rgba(192, 57, 43, 0.08);
-    border-radius: 50%;
+.affiliation-logo {
+    width: 120px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
 }
 
-.affiliation-icon i {
-    font-size: 1.8rem;
-    color: var(--primary);
+.affiliation-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .affiliation-card h5 {
@@ -1352,6 +1357,12 @@ select.custom-input {
     background: var(--white);
 }
 
+.partner-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
 .partner-card {
     background: var(--section-bg);
     border-radius: 10px;
@@ -1366,6 +1377,21 @@ select.custom-input {
     box-shadow: 0 12px 30px rgba(0,0,0,0.08);
     border-color: var(--primary);
     background: var(--white);
+}
+
+.partner-logo {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+
+.partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .partner-card i {
