@@ -81,14 +81,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-quote {
     background: var(--primary) !important;
-    color: var(--dark) !important;
+    color: var(--white) !important;
     border-radius: 4px !important;
     font-weight: 700 !important;
     padding: 8px 20px !important;
+    transition: all 0.3s ease !important;
 }
 
-.btn-quote:hover {
-    background: var(--primary-dark) !important;
+.btn-quote:hover,
+.btn-quote.active {
+    background: var(--secondary) !important;
+    color: var(--white) !important;
 }
 
 .navbar-toggler {
