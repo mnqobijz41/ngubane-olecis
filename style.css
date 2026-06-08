@@ -1446,16 +1446,8 @@ select.custom-input {
 
 /* ==================== CONTACT MAIN SECTION ==================== */
 .contact-main-section {
-    background: var(--secondary);
+    background: var(--section-bg);
     position: relative;
-}
-
-.contact-main-section .form-card {
-    background: var(--white);
-}
-
-.contact-main-section .form-label {
-    color: var(--secondary);
 }
 
 /* ==================== CONTACT INFO CARDS UPDATED ==================== */
