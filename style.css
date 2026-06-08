@@ -135,7 +135,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-hero-overlay {
-    display: none;
+    position: absolute;
+    inset: 0;
+    background: url('../Images/contactphoto.jpeg') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 1;
 }
 
 .gallery-filter-section,
@@ -1437,7 +1446,7 @@ select.custom-input {
 
 /* ==================== CONTACT MAIN SECTION ==================== */
 .contact-main-section {
-    background: var(--white);
+    background: var(--section-bg);
     position: relative;
 }
 
