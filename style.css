@@ -441,10 +441,22 @@ h1, h2, h3, h4, h5, h6 {
 .cta-section {
     background: linear-gradient(135deg, #1a1a2e, #0f0f0f);
     padding: 40px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .cta-section::before {
-    display: none;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../Images/contactphoto.jpeg') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.cta-section .container {
+    position: relative;
+    z-index: 1;
 }
 
 .cta-section h2 {
